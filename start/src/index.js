@@ -1,7 +1,8 @@
-var x=10;
+for(i= 0; i<45; i++){
+    var div = document.createElement('div');
+    div.onclick = function() {
+        alert("you clicked on a box #" + i);
+    };
 
-if(x){
-    //give x block scope (only inside the if block)
-    let x = 4;
+    document.getElementsByTagName('section')[0].appendChild(div);
 }
-console.log(x);
