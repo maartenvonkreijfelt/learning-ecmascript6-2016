@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+        <meta charset="UTF-8">
+        <title>Chapter 3.1</title>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
     <script type="text/babel">
-        //Our first typescript
-        var nameBuilder = function(firstName = "Peter", lastName = "Pan") {
-            console.log(firstName + " " + lastName);
-        };
-        nameBuilder();
+        var x=10;
+
+        if(x){
+            //give x block scope (only inside the if block)
+            let x = 4;
+        }
+        console.log(x);
     </script>
-    <title>Working with Babel</title>
+    <title>Let Keyword</title>
 </head>
 <body>
 </body>
