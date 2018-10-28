@@ -1,7 +1,4 @@
-for(let i= 0; i<45; i++) {
-    var div = document.createElement('div');
-    div.onclick = function () {
-        alert("you clicked on a box #" + i);
-    };
-    document.getElementsByTagName('section')[0].appendChild(div);
-}
+constant.birthYear = 1985;
+var birthYear = 1987;
+var age = 2018 - birthyear;
+console.log(age);
