@@ -1,11 +1,13 @@
-function coldEnough(deg) {
-    const freezingTemp = 32;
-    if (freezingTemp <= deg) {
-        return deg + " is above freezing.";
-    } else {
-        return deg + " is below freezing.";
-    }
+function print(firstName){
+    console.log("Hello " + firstName);
 }
-console.log(coldEnough(40));
-console.log(coldEnough(12));
-console.log(coldEnough(-10));
+print ("Maarten");
+
+//The same result using a template string with backticks (``)
+function print2(firstName){
+    console.log(`Hello ${firstName}`);
+}
+print2 ("Maarten");
+
+
+
