@@ -1,13 +1,8 @@
-function print(firstName){
-    console.log("Hello " + firstName);
-}
-print ("Maarten");
+var cats = ["Tabby", "Siamese", "Persian"];
+var dogs = ["Golden Retriever", "Pug", "Schnauzer"];
 
-//The same result using a template string with backticks (``)
-function print2(firstName){
-    console.log(`Hello ${firstName}`);
-}
-print2 ("Maarten");
+var animals = ["Whale", "Giraffe", cats, "Snake", dogs, "Coyote"];
+console.log(animals);
 
-
-
+var animals = ["Whale", "Giraffe", ...cats, "Snake", ...dogs, "Coyote"];
+console.log(animals);
