@@ -1,28 +1,16 @@
-for (let letter of 'JavaScript') {
-    console.log(letter);
+function add(x,y){
+console.log(x+y)
 }
+add();
 
-var topics = ['JavaScript', 'Node', 'React'];
 
-for (let topic of topics) {
-    console.log(topic);
+function add2(x=5,y=7){
+    console.log(x+y)
 }
+add2();
 
-var topics = new Map();
-topics.set('HTML', '/class/html');
-topics.set('CSS', '/class/css');
-topics.set('JavaScript', '/class/javascript');
-topics.set('Node', '/class/node');
 
-for (let topic of topics.keys()) {
-    console.log(topic, "is the course name");
+function add3(x=5,y=7){
+    console.log(x+y)
 }
-
-for (let topic of topics.values()) {
-    console.log("The course description can be found at", topic);
-}
-
-for (let course of topics.entries()) {
-    console.log(course);
-}
-
+add3(20,60);
