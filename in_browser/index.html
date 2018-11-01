@@ -2,15 +2,27 @@
 <html>
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
-    <script type="text/babel">
-        //Our first typescript
-        var nameBuilder = function(firstName = "Peter", lastName = "Pan") {
-            console.log(firstName + " " + lastName);
-        };
-        nameBuilder();
-    </script>
-    <title>Working with Babel</title>
+
+    <title>Enhancing object literals</title>
 </head>
+
 <body>
+
+
+
+
+
+    <script type="text/babel">
+
+        var studentList = function(students){
+            console.log(students);
+        };
+        var studentList2 = students => console.log(students);
+
+
+        studentList(["Joe", "Cindy", "Jeanne"]);
+
+        studentList2(["Joe", "Cindy", "Jeanne");]
+    </script>
 </body>
 </html>
