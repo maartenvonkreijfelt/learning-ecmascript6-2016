@@ -1,14 +1,43 @@
-var studentList = function(students){
-    console.log(students);
-    };
-var studentList2 = students => console.log(students);
+var person = {
+    first: "Doug",
+    actions: ['bike', 'hike', 'ski', 'surf'],
+    printActions: function() {
+        this.actions.forEach(function(action) {
+            var str = this.first + " likes to " + action;
+        console.log(str);
+    });
+    }
+};
+person.printActions();
 
-var studentList3 = (student, teachter) => console.log(student, teachter);
 
 
 
-studentList(["Joe", "Cindy", "Jeanne"]);
 
-studentList2(["Joe", "Cindy", "Jeanne"]);
 
-studentList3("Peter","Francis");
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+var person = {
+    first: "Doug",
+    actions: ['bike', 'hike', 'ski', 'surf'],
+    printActions() {
+        this.actions.forEach(action => {
+            var str = this.first + " likes to " + action;
+        console.log(str);
+    });
+    }
+};
+person.printActions();
+    */

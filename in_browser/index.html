@@ -14,15 +14,17 @@
 
     <script type="text/babel">
 
-        var studentList = function(students){
-            console.log(students);
+        var person = {
+            first: "Doug",
+            actions: ['bike', 'hike', 'ski', 'surf'],
+            printActions: function() {
+                this.actions.forEach(function(action) {
+                    var str = this.first + " likes to " + action;
+                    console.log(str);
+                });
+            }
         };
-        var studentList2 = students => console.log(students);
-
-
-        studentList(["Joe", "Cindy", "Jeanne"]);
-
-        studentList2(["Joe", "Cindy", "Jeanne");]
+        person.printActions();
     </script>
 </body>
 </html>
