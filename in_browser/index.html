@@ -13,16 +13,14 @@
 
 
     <script type="text/babel">
-
         var person = {
             first: "Doug",
             actions: ['bike', 'hike', 'ski', 'surf'],
-            printActions: function() {
-
-                this.actions.forEach(function(action) {
+            printActions() {
+                this.actions.forEach(action => {
                     var str = this.first + " likes to " + action;
                     console.log(str);
-                }.bind(this));
+                });
             }
         };
         person.printActions();

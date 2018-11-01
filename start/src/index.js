@@ -1,3 +1,5 @@
+
+/*
 var person = {
     first: "Doug",
     actions: ['bike', 'hike', 'ski', 'surf'],
@@ -12,6 +14,7 @@ var person = {
 person.printActions();
 
 
+*/
 
 
 
@@ -26,7 +29,6 @@ person.printActions();
 
 
 
-/*
 var person = {
     first: "Doug",
     actions: ['bike', 'hike', 'ski', 'surf'],
@@ -38,4 +40,3 @@ var person = {
     }
 };
 person.printActions();
-    */
