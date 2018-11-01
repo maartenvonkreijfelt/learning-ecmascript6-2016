@@ -1,19 +1,14 @@
-function add(x,y){
-    console.log(x+y)
-}
-add();
+var studentList = function(students){
+    console.log(students);
+    };
+var studentList2 = students => console.log(students);
 
-function add2(x=5,y=7){
-    console.log(x+y)
-}
-add2();
+var studentList3 = (student, teachter) => console.log(student, teachter);
 
-function add3(x=5,y=7){
-    console.log(x+y)
-}
-add3(20,60);
 
-function haveFun(activityName="hiking", time=3) {
-    console.log(`Today I will go ${activityName} for ${time} hours.`)
-}
-haveFun("biking", 5);
+
+studentList(["Joe", "Cindy", "Jeanne"]);
+
+studentList2(["Joe", "Cindy", "Jeanne"]);
+
+studentList3("Peter","Francis");
