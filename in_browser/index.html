@@ -13,18 +13,32 @@
 
 
     <script type="text/babel">
-        var person = {
-            first: "Doug",
-            actions: ['bike', 'hike', 'ski', 'surf'],
-            printActions() {
-                this.actions.forEach(action => {
-                    var str = this.first + " likes to " + action;
-                    console.log(str);
-                });
-            }
-        };
-        person.printActions();
+        /*
+         var vacation = {
+         destination: "Chile",
+         travelers: 2,
+         activity: "skiing",
+         cost: 4000
+         };
 
+         console.log(vacation.destination);
+         console.log(vacation.travelers);
+         */
+
+
+
+
+
+
+        var {title,price} = {
+            destination: "Chile",
+            travelers: 2,
+            activity: "skiing",
+            cost: 4000
+        };
+
+        console.log(vacation.destination);
+        console.log(vacation.travelers);
     </script>
 </body>
 </html>
