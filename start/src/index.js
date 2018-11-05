@@ -1,23 +1,20 @@
-function* director(){
-
-    yield "Three";
-    yield "Two";
-    yield "One";
-    yield "Action";
+function* eachItem(arr) {
+    for(var i=0; i< arr.length; i++) {
+        yield arr[i];
+    }
 }
 
-var action = director();
+var letters = eachItem(["a", "b", "c", "d", "e", "f", "g"]);
 
-/*
-console.log(action.next());
-console.log(action.next());
-console.log(action.next());
-console.log(action.next());
-console.log(action.next());
-*/
+var abcs = setInterval(function(){
+        var letter = letters.next();
+        if(letter.done) {
+            clearInterval(abcs);
+            console.log("Now I know my ABC's");
+        } else {
+            console.log(letter.value);
+        }
+    },
 
-console.log(action.next().value);
-console.log(action.next().value);
-console.log(action.next().value);
-console.log(action.next().value);
-console.log(action.next().value);
+    500);
+
