@@ -1,42 +1,10 @@
-
-/*
-var person = {
-    first: "Doug",
-    actions: ['bike', 'hike', 'ski', 'surf'],
-    printActions: function() {
-
-        this.actions.forEach(function(action) {
-            var str = this.first + " likes to " + action;
-            console.log(str);
-        }.bind(this));
-    }
-};
-person.printActions();
+//var cities = ["Spokane", "Boston", "Los Angeles", "Seattle", "Portland"];
+//cities[0];
+//cities[3];
 
 
-*/
+var [first,,,fourth,]= ["Spokane", "Boston", "Los Angeles", "Seattle", "Portland"];
+console.log(first);
+console.log(fourth);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-var person = {
-    first: "Doug",
-    actions: ['bike', 'hike', 'ski', 'surf'],
-    printActions() {
-        this.actions.forEach(action => {
-            var str = this.first + " likes to " + action;
-        console.log(str);
-    });
-    }
-};
-person.printActions();
