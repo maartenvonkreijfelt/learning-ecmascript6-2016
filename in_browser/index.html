@@ -3,7 +3,7 @@
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
 
-    <title>Enhancing object literals</title>
+    <title>Generators</title>
 </head>
 
 <body>
@@ -14,19 +14,21 @@
 
     <script type="text/babel">
 
-        var vacation = {
-            destination: "Chile",
-            travelers: 2,
-            activity: "skiing",
-            cost: 4000
-        };
+   function* director(){
 
-        function vacationMarketing({destination, activity}) {
-            return `Come to ${destination} and do some ${activity}`
-        }
+       yield "Three";
+       yield "Two";
+       yield "One";
+       yield "Action";
+   }
 
-        console.log(vacationMarketing(vacation));
+        var action = director();
 
+        console.log(action.next());
+   console.log(action.next());
+   console.log(action.next());
+   console.log(action.next());
+   console.log(action.next());
     </script>
 </body>
 </html>

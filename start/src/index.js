@@ -1,13 +1,23 @@
+function* director(){
 
-var vacation = {
-    destination: "Chile",
-    travelers: 2,
-    activity: "skiing",
-    cost: 4000
-};
-
-function vacationMarketing({destination, activity}) {
-    return `Come to ${destination} and do some ${activity}`
+    yield "Three";
+    yield "Two";
+    yield "One";
+    yield "Action";
 }
 
-console.log(vacationMarketing(vacation));
+var action = director();
+
+/*
+console.log(action.next());
+console.log(action.next());
+console.log(action.next());
+console.log(action.next());
+console.log(action.next());
+*/
+
+console.log(action.next().value);
+console.log(action.next().value);
+console.log(action.next().value);
+console.log(action.next().value);
+console.log(action.next().value);
